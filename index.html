@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="topbar" class="topbar"></div>
+    <div id="sidebar" class="sidebar"></div>
+    <div id="main" class="main">
+      <div id="card" class="user-card">
+        <div class="infoContainer">
+          <img class="thumbnail" src="img/profile_img.svg" />
+          <div class="container">
+            <div class="content">
+              <div class="name" id="name">Tim Berners-lee</div>
+              <div class="position" id="position">Web Developer</div>
+              <div class="description" id="description">
+                Teacher and Scholar at MIT
+              </div>
+            </div>
+            <button id="edit" type="button">Edit</button>
+          </div>
+        </div>
+        <div class="inputContainer hidden" id="details">
+          <div class="contentEdit">
+            <label>Name</label> <input class="name" id="editedName" />
+            <label>Position</label>
+            <input class="position" id="editedPosition" />
+            <label>Description</label>
+            <input class="description" id="editedDescrip" />
+          </div>
+          <div class="controls" id="editCtr">
+            <button id="save" type="button">Save</button>
+            <button id="cancel" type="button">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
